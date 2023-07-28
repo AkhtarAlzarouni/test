@@ -1,25 +1,17 @@
 public class hello {
-    public static String reverseString(String input) {
-        char[] charArray = input.toCharArray();
-        int x = 0;
-        int y = charArray.length - 1;
+public static void main(String[] args){
+    Scanner s = new Scanner(System.in);
+    System.out.println("Write your word : ");
+    String word = s.nextLine();
+    String rese=re(word);
+    System.out.println("This reverse word : "+rese);
 
-        while (x < y) {
-            char temp = charArray[x];
-            charArray[x] = charArray[y];
-            charArray[y] = temp;
-
-            x++;
-            y--;
+    }
+     public static String re (String word){
+        StringBuilder res=new StringBuilder(word);
+            return res.reverse().toString();
         }
-
-        return new String(charArray);
-    }
-
-    public static void main(String[] args) {
-        String input = "hello";
-        String reversedString = reverseString(input);
-        System.out.println("Reversed string: " + reversedString);
-    }
+     
+    
 }
 
