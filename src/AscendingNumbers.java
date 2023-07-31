@@ -1,3 +1,6 @@
+
+// Given an array of integers nums, sort the array in ascending order.
+
 public class AscendingNumbers {
     public static void main(String[] args) {
         int[] arrayX={5,7,3,6,1};
