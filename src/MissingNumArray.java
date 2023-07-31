@@ -1,3 +1,6 @@
+
+
+//Given an unsorted integer array nums, find the smallest missing positive integer.
 public class MissingNumArray {
 
     public static void main(String[] args) {
